@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furniture Shop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Furniture Shop</h1>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showPage('home')">Home</a></li>
+                <li><a href="#" onclick="showPage('products')">Products</a></li>
+                <li><a href="#" onclick="showPage('cart')">Cart</a></li>
+                <li><a href="#" onclick="showPage('contact')">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <section id="home">
+             
+             
+
+        <section id="products" class="hidden">
+            <!-- Products will be injected here by JavaScript -->
+        </section>
+
+        <section id="cart" class="hidden">
+            <h2>Shopping Cart</h2>
+            <ul id="cart-items"></ul>
+            <p id="total-price">Total: $0.00</p>
+        </section>
+
+        <section id="contact" class="hidden">
+            <h2>Contact Us</h2>
+            <p>For any inquiries, please contact us at:</p>
+            <p>Email: cheguver@gmail.com</p>
+            <p>Phone: 9656596966</p>
+        </section>
+    </main>
+
+    <div class="cart-icon" onclick="showPage('cart')">🛒</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
